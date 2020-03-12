@@ -1,0 +1,19 @@
+﻿<Window x:Class="Opgave_2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Opgave_2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Closing="Window_Closing" Closed="Window_Closed">
+    <Grid OpacityMask="#FF8A6161" Background="#FFDFDFDF">
+        <Button x:Name="B_blodsukker" Content="Blodsukker" HorizontalAlignment="Left" Margin="10,64,0,0" VerticalAlignment="Top" Width="219" Height="62" Background="#FF65CDDA" OpacityMask="#FF903A3A" FontSize="24" FontWeight="Bold" Click="B_blodsukker_Click" BorderBrush="#FF080303" Foreground="White"/>
+        <Button x:Name="B_Vægt" Content="Vægt" HorizontalAlignment="Left" Margin="10,320,0,0" VerticalAlignment="Top" Width="219" Height="62" Background="#FF65CDDA" OpacityMask="#FF903A3A" FontSize="24" FontWeight="Bold" BorderBrush="#FF080303" Foreground="White" Click="B_Vægt_Click"/>
+        <Button x:Name="B_blodtryk" Content="Blodtryk" HorizontalAlignment="Left" Margin="10,193,0,0" VerticalAlignment="Top" Width="219" Height="62" Background="#FF65CDDA" OpacityMask="#FF903A3A" FontSize="24" FontWeight="Bold" Click="B_blodtryk_Click" BorderBrush="#FF080303" Foreground="White"/>
+        <RadioButton x:Name="RB_1uge" Content="1 uge" HorizontalAlignment="Left" Margin="432,78,0,0" VerticalAlignment="Top" Height="26" Width="279" FontSize="22" BorderThickness="5,1,1,1" Opacity="2"/>
+        <RadioButton x:Name="RB_2uger" Content="2 uger" HorizontalAlignment="Left" Margin="432,151,0,0" VerticalAlignment="Top" Height="26" Width="279" FontSize="22" BorderThickness="10,1,1,1"/>
+        <RadioButton x:Name="RB_4uger" Content="4 uger" HorizontalAlignment="Left" Margin="432,227,0,0" VerticalAlignment="Top" Height="28" Width="276" FontSize="22" Checked="RadioButton_Checked" BorderThickness="10,1,1,1"/>
+        <Button x:Name="B_send" Content="Send" HorizontalAlignment="Left" Margin="432,320,0,0" VerticalAlignment="Top" Width="219" Height="62" Background="#FF65CDDA" OpacityMask="#FF903A3A" FontSize="24" FontWeight="Bold" BorderBrush="#FF080303" Foreground="White" Click="B_send_Click"/>
+
+    </Grid>
+</Window>

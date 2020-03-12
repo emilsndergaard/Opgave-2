@@ -1,0 +1,23 @@
+﻿<Window x:Class="Opgave_2.LogInd"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Opgave_2"
+        mc:Ignorable="d"
+        Title="LogInd" Height="341.941" Width="466.941">
+    <Grid x:Name="B_logInd" RenderTransformOrigin="0.46,0.516" Background="#FFFDFFF1">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="163*"/>
+            <ColumnDefinition Width="68*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="TB_personnummer" HorizontalAlignment="Left" Height="48" Margin="133,58,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="188" Background="{x:Null}" BorderBrush="#FF878787" FontSize="30" Text="00000-0000" TextChanged="TB_personnummer_TextChanged" GotFocus="TB_personnummer_GotFocus"/>
+        <Button x:Name="B_logind" Content="Login" HorizontalAlignment="Left" Margin="151,210,0,0" VerticalAlignment="Top" Width="159" Height="53" Background="#FF50CBF9" FontSize="30" FontWeight="Bold" Click="B_logind_Click" Foreground="#FFE8E5E5" TouchEnter="B_logind_TouchEnter"/>
+        <Label Content="Person nummer:" HorizontalAlignment="Left" Margin="133,24,0,0" VerticalAlignment="Top" Width="127" FontSize="14"/>
+        <Label Content="Password:" HorizontalAlignment="Left" Margin="133,113,0,0" VerticalAlignment="Top" Width="127" FontSize="14"/>
+        <PasswordBox x:Name="TB_password" HorizontalAlignment="Left" Margin="133,147,0,0" VerticalAlignment="Top" Height="47" Width="188" RenderTransformOrigin="0.532,0.17" FontSize="30" PasswordChar="*" MaxLength="4" FontWeight="ExtraBlack" GotFocus="TB_password_GotFocus"/>
+        <TextBlock HorizontalAlignment="Left" Margin="16,330,0,-31.5" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+        <!--<PasswordBox x:Name="TB_password" HorizontalAlignment="Left" Margin="151,158,0,0" VerticalAlignment="Top" Width="188" Height="47" FontSize="24" IsEnabled="False"/>-->
+
+    </Grid>
+</Window>
